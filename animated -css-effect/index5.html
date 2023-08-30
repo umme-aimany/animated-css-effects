@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Even More CSS Effects</title>
+<style>
+  /* Neon Glow Text */
+  .neon-text {
+    font-size: 36px;
+    color: #16a085;
+    text-shadow: 0 0 10px rgba(22, 160, 133, 0.8), 0 0 20px rgba(22, 160, 133, 0.8), 0 0 30px rgba(22, 160, 133, 0.8);
+    animation: neonGlow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes neonGlow {
+    from {
+      text-shadow: none;
+    }
+    to {
+      text-shadow: 0 0 10px rgba(22, 160, 133, 0.8), 0 0 20px rgba(22, 160, 133, 0.8), 0 0 30px rgba(22, 160, 133, 0.8);
+    }
+  }
+
+  /* Slide-In Element */
+  .slide-in {
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12;
+    position: absolute;
+    left: -120px;
+    animation: slideIn 1s ease-in-out forwards;
+  }
+
+  @keyframes slideIn {
+    to {
+      left: 50px;
+    }
+  }
+
+  /* Pulse Background */
+  .pulse-background {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    animation: pulseBackground 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseBackground {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+</style>
+</head>
+<body>
+  <p class="neon-text">Neon Glow Text</p>
+  <div class="slide-in"></div>
+  <div class="pulse-background"></div>
+</body>
+</html>

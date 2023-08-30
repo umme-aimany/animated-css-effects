@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Even More CSS Effects</title>
+<style>
+  /* Blinking Text Animation */
+  .blinking-text {
+    font-size: 24px;
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Glowing Button */
+  .glow-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: glow 1s infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(52, 152, 219, 0.8);
+    }
+  }
+
+  /* Text Rotation */
+  .rotating-text {
+    font-size: 24px;
+    animation: rotateText 4s linear infinite;
+  }
+
+  @keyframes rotateText {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</head>
+<body>
+  <p class="blinking-text">Blinking Text</p>
+  <button class="glow-button">Glowing Button</button>
+  <p class="rotating-text">Rotating Text</p>
+</body>
+</html>
